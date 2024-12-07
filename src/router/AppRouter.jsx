@@ -7,6 +7,7 @@ export const AppRouter = () => {
     <>
         <Routes>
             <Route path="/navidad" element={<NavidadPage/>} />
+            <Route path="/*" element={<NavidadPage/>} />
         </Routes>
     </>
   )

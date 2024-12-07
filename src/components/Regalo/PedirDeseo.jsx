@@ -21,7 +21,7 @@ export const PedirDeseo = () => {
             onClick={handleOpenModal}
           >
             Pedir Regalo
-            <div class="hoverEffect">
+            <div className="hoverEffect">
               <div></div>
             </div>
           </button>
