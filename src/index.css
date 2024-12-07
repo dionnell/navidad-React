@@ -65,12 +65,12 @@ body {
 
 .container {
   max-width: 124rem;
-  padding: 4rem 1rem;
+  padding: 3rem 1rem;
   margin: 0 auto;
 }
 
 .heading {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   font-size: 3.5rem;
   text-align: center;
 }
