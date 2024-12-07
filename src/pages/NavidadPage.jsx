@@ -22,7 +22,7 @@ const onTailwind = () =>{
             onClick={onSwiper}
           >
             Carousel Swiper
-            <div class="hoverEffect">
+            <div className="hoverEffect">
               <div></div>
             </div>
           </button>
@@ -33,7 +33,7 @@ const onTailwind = () =>{
             onClick={onTailwind}
           >
             Carousel Tailwind
-            <div class="hoverEffect">
+            <div className="hoverEffect">
               <div></div>
             </div>
           </button>
@@ -44,8 +44,9 @@ const onTailwind = () =>{
         : <CarrouselImagen/>
       }
       
-      <PedirDeseo/>
-
+      <div className="grid gap-x-10 gap-y-4 grid-cols-1 justify-items-center mb-5">
+        <PedirDeseo/>
+      </div>
     </>
   )
 }
