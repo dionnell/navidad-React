@@ -19,7 +19,7 @@ export const CarrouselImagen = () => {
 
 
   return (
-    <div>
+    <div className='mb-5'>
       <h1 className="heading">Carousel 3D Swiper</h1>
       <Swiper
         effect={'coverflow'}
@@ -65,11 +65,11 @@ export const CarrouselImagen = () => {
           <img src={slide_image_6} alt="slide_image" />
         </SwiperSlide>
 
-        <div className="slider-controler">
-          <div className="swiper-button-prev slider-arrow">
+        <div className="slider-controler ">
+          <div className="swiper-button-prev slider-arrow hover:shadow-[0px_0px_15px_0px_rgba(39,70,132,0.7)]">
             <ion-icon name="arrow-back-outline"></ion-icon>
           </div>
-          <div className="swiper-button-next slider-arrow">
+          <div className="swiper-button-next slider-arrow hover:shadow-[0px_0px_15px_0px_rgba(39,70,132,0.7)]">
             <ion-icon name="arrow-forward-outline"></ion-icon>
           </div>
           <div className="swiper-pagination"></div>
