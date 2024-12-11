@@ -2,6 +2,7 @@ import { useState } from "react"
 import { CarrouselImagen, CarouselTailwind } from "../components/Carrousels"
 import { PedirDeseo } from '../components/Regalo'
 import { PlaylistMusic } from "../components/PlaylistMusic/PlaylistMusic"
+import { Titulo } from "../components/Cabecera/Titulo"
 
 export const NavidadPage = () => {
 
@@ -16,7 +17,9 @@ const onTailwind = () =>{
 
   return (
     <>
-      <div className="grid gap-x-10 gap-y-4 grid-cols-2 justify-items-center">
+      <Titulo/>
+      <div className="gradient">
+        <div className="grid gap-x-10  grid-cols-2 justify-items-center">
         <div className="p-11 ms-auto">
           <button 
             className="button border-2"
@@ -39,17 +42,18 @@ const onTailwind = () =>{
             </div>
           </button>
         </div>
-      </div>
-      {
-        (carousel === 'Tailwind') ? <CarouselTailwind interval={2500}/>
-        : <CarrouselImagen/>
-      }
-      
-      <div className="grid gap-x-10 gap-y-4 grid-cols-1 justify-items-center mb-5">
-        <PedirDeseo/>
-      </div>
-      <div className="grid gap-x-10 gap-y-4 grid-cols-1 justify-items-center mb-7">
-        <PlaylistMusic/>
+        </div>
+        {
+          (carousel === 'Tailwind') ? <CarouselTailwind interval={2500}/>
+          : <CarrouselImagen/>
+        }
+
+        <div className="grid gap-x-10  grid-cols-1 justify-items-center mb-5">
+          <PedirDeseo/>
+        </div>
+        <div className="grid gap-x-10 gap-y-4 grid-cols-1 justify-items-center ">
+          <PlaylistMusic/>
+        </div>
       </div>
     </>
   )

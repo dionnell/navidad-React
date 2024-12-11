@@ -29,10 +29,10 @@ export const Formulario = () => {
               url("/nyan-cat.gif")
               left top
               no-repeat
-            `
-          })
-          navigate('/navidad',{
-            replace: true
+            `,
+            preConfirm: () => {
+              window.location.reload(false);
+            },
           })
 
         },

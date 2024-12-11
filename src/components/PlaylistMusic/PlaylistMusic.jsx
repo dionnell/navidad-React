@@ -34,6 +34,34 @@ export const PlaylistMusic = () => {
             img: '/Michael_Buble.jpg',
             audio: '/songs/Michael Bublé - Holly Jolly Christmas.MP3',
             duration: '2:00'
+        },
+        {
+            name: 'Christmas Tree Farm',
+            author: 'Taylor Swift',
+            img: '/Taylor_Swift.jpg',
+            audio: '/songs/Taylor Swift - Christmas Tree Farm.MP3',
+            duration: '3:45'
+        },
+        {
+            name: 'Last Christmas',
+            author: 'Ariana Grande',
+            img: '/Ariana_Grande.jpg',
+            audio: '/songs/Ariana Grande - Last Christmas.MP3',
+            duration: '3:20'
+        },
+        {
+            name: 'Man With The Bag',
+            author: 'Jessie J',
+            img: '/Jessie_J.jpg',
+            audio: '/songs/Man With The Bag.MP3',
+            duration: '2:40'
+        },
+        {
+            name: 'Cozy Little Christmas',
+            author: 'Katy Perry',
+            img: '/Katy_Perry.jpg',
+            audio: '/songs/Katy Perry - Cozy Little Christmas.MP3',
+            duration: '2:40'
         }
     ],
     pause: false
@@ -183,15 +211,18 @@ export const PlaylistMusic = () => {
   const { musicList, index, currentTime, pause } = state;
   const currentSong = musicList[index];
   
+  
+  
+
   return (
-    <div className="grid grid-cols-2 justify-center items-center  p-1 mb-5 rounded-2xl overflow-hidden text-[#b3cde0] font-light bg-[#011f4b] shadow-[0px_0px_70px_0px_#274684] h-[440px] max-md:grid-cols-1 max-md:h-[700px]">
+    <div className="grid grid-cols-2 justify-center items-center  p-1 mb-10 rounded-2xl overflow-hidden text-[#b3cde0] font-light bg-[#011f4b] shadow-[0px_0px_70px_0px_#274684] h-[440px] max-md:grid-cols-1 max-md:h-[700px]">
         <div  className="flex flex-col items-center w-[360px] py-5 mx-auto rounded-2xl text-[#011f4b] bg-[#b3cde0] max-md:h-[350px]">
             <audio  className='hidden' ref={playerRef}>
                 <source src={currentSong.audio} type="audio/ogg" />
                 <source src={currentSong.audio} type="audio/mpeg"/>
                 Your browser does not support the audio element.
             </audio>
-            <div className="relative m-0 w-[200px] h-[200px] rounded-3xl  shadow-[0px_10px_40px_0px_rgba(39,70,132,0.7)] overflow-hidden hover:animate-[convertirEnCirculo_0.40s_forwards]">
+            <div className="relative m-0 w-[200px] h-[200px] rounded-3xl  shadow-[0px_10px_40px_0px_rgba(39,70,132,0.7)] overflow-hidden hover:animate-[convertirEnCirculo_0.35s_forwards]">
                 <img className='w-auto h-full object-cover' src={currentSong.img} alt="Song cover" />
             </div>
             <span className="mt-7 text-4xl font-medium">{currentSong.name}</span>
@@ -225,7 +256,7 @@ export const PlaylistMusic = () => {
                         index === key && pause ? 'play-now' : ''
                     }`}
                 >
-                    <img className="track-img object-cover" src={music.img} alt="Track cover" />
+                    <img className="track-img object-cover hover:animate-[scaleImg_0.35s_forwards]" src={music.img} alt="Track cover" />
                     <div className="track-discr">
                         <span className="track-name w-[195px] truncate hover:text-clip">{music.name}</span>
                         <span className="track-author">{music.author}</span>

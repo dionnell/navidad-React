@@ -15,7 +15,7 @@ export const PedirDeseo = () => {
 
   return (
     <>
-      <div className="p-11 me-auto ms-auto ">
+      <div className="p-9 mx-auto ">
           <button 
             className="button border-2"
             onClick={handleOpenModal}
