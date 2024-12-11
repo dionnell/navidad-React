@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { CarrouselImagen, CarouselTailwind } from "../components/Carrousels"
 import { PedirDeseo } from '../components/Regalo'
+import { PlaylistMusic } from "../components/PlaylistMusic/PlaylistMusic"
 
 export const NavidadPage = () => {
 
@@ -46,6 +47,9 @@ const onTailwind = () =>{
       
       <div className="grid gap-x-10 gap-y-4 grid-cols-1 justify-items-center mb-5">
         <PedirDeseo/>
+      </div>
+      <div className="grid gap-x-10 gap-y-4 grid-cols-1 justify-items-center mb-7">
+        <PlaylistMusic/>
       </div>
     </>
   )
