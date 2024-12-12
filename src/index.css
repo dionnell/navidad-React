@@ -317,7 +317,11 @@ body {
     left: 5%;
   }
 }
-
+@media (max-width: 350px) {
+  .Modal {
+    left: 1%;
+  }
+}
 .Overlay {
   position: fixed;
   top: 0;
