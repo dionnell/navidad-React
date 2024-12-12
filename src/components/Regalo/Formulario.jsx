@@ -1,20 +1,18 @@
 import { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2'
-import { useNavigate } from "react-router-dom";
 import { IoGiftOutline } from "react-icons/io5";
 
 
 export const Formulario = () => {
   const form = useRef();
-  const navigate = useNavigate()
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+ 
     emailjs
-      .sendForm('service_csypx9q', 'template_9cqco3p', form.current, {
-        publicKey: 'fBNMi6BmPfdO7NNJN',
+      .sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, {
+        publicKey: import.meta.env.VITE_PUBLIC_KEY,
       })
       .then(
         () => {
