@@ -20,7 +20,7 @@ const onTailwind = () =>{
       <Titulo/>
       <div className="gradient">
         <div className="grid gap-x-10  grid-cols-2 justify-items-center">
-        <div className="p-11 ms-auto">
+        <div className="px-11 py-11 ms-auto max-sm:px-0">
           <button 
             className="button border-2"
             onClick={onSwiper}
@@ -31,7 +31,7 @@ const onTailwind = () =>{
             </div>
           </button>
         </div>
-        <div className="p-11 me-auto">
+        <div className="px-11 py-11 me-auto max-sm:px-0">
           <button 
             className="button border-2"
             onClick={onTailwind}
