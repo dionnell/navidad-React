@@ -216,7 +216,7 @@ export const PlaylistMusic = () => {
 
   return (
     <div className="grid grid-cols-2 justify-center items-center  p-1 mb-10 rounded-2xl overflow-hidden text-[#b3cde0] font-light bg-[#011f4b] shadow-[0px_0px_70px_0px_#274684] h-[440px] max-md:grid-cols-1 max-md:h-[700px]">
-        <div  className="flex flex-col items-center w-[360px] py-5 mx-auto rounded-2xl text-[#011f4b] bg-[#b3cde0] max-md:h-[350px]">
+        <div  className="flex flex-col items-center w-[360px] py-5 mx-auto rounded-2xl text-[#011f4b] bg-[#b3cde0] max-md:h-[350px] max-md:w-[330px]">
             <audio  className='hidden' ref={playerRef}>
                 <source src={currentSong.audio} type="audio/ogg" />
                 <source src={currentSong.audio} type="audio/mpeg"/>
