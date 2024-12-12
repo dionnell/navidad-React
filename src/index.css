@@ -64,7 +64,7 @@ body {
 }
 
 .container {
-  max-width: 124rem;
+  max-width: 200rem;
   padding: 3rem 1rem;
   margin: 0 auto;
 }
@@ -84,21 +84,8 @@ body {
 .swiper-slide {
   width: 60rem !important;
   height: 40rem;
+  clip: auto;
   position: relative;
-}
-
-@media (max-width: 500px) {
-  .swiper_container {
-    height: 47rem;
-  }
-  .swiper-slide {
-    width: 28rem !important;
-    height: 36rem !important;
-  }
-  .swiper-slide img {
-    width: 28rem !important;
-    height: 36rem !important;
-  }
 }
 
 .swiper-slide img {
@@ -107,6 +94,36 @@ body {
   border-radius: 2rem;
   object-fit: cover !important;
 }
+
+@media (max-width: 768px) {
+  .swiper_container {
+    height: 40rem;
+    width: auto;
+  }
+  .swiper-slide {
+    width: 25rem !important;
+    height: 28rem !important;
+  }
+  .swiper-slide img {
+    width: 25rem !important;
+    height: 28rem !important;
+  }
+}
+@media (max-width: 572px) {
+  .swiper_container {
+    height: 30rem;
+    width: 50rem;
+  }
+  .swiper-slide {
+    width: 25rem !important;
+    height: 25rem !important;
+  }
+  .swiper-slide img {
+    width: 25rem !important;
+    height: 25rem !important;
+  }
+}
+
 
 .swiper-slide-shadow-left,
 .swiper-slide-shadow-right {
@@ -280,6 +297,30 @@ body {
   height: 500px;
   z-index: 2;
 
+}
+@media (max-width: 768px) {
+  .Modal {
+    right: 70%;
+    left: 30%;
+  }
+}
+@media (max-width: 600px) {
+  .Modal {
+    right: 70%;
+    left: 20%;
+  }
+}
+@media (max-width: 500px) {
+  .Modal {
+    right: 70%;
+    left: 13%;
+  }
+}
+@media (max-width: 400px) {
+  .Modal {
+    right: 70%;
+    left: 5%;
+  }
 }
 
 .Overlay {
@@ -602,7 +643,7 @@ body {
 	background-size: auto 450px;
   min-height: 250px;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 90%);
-    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 8%, rgba(0, 0, 0, 1) 70%);
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 8%, rgba(0, 0, 0, 1) 55%);
 }
 .cloud-text {
 	font-family: 'Coiny', cursive;
@@ -619,6 +660,14 @@ body {
 	animation-play-state: running;
 	animation-timing-function: linear;
 	text-align: center;
+}
+@media(max-width: 600px){
+  .cloud-text{
+    font-size: 100px;
+  }
+  .containerTitle{
+    padding-bottom: 25px;
+  }
 }
 @keyframes clouds-moving {
 	0% {

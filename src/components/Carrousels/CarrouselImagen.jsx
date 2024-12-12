@@ -19,7 +19,7 @@ export const CarrouselImagen = () => {
 
 
   return (
-    <div className='mb-5'>
+    <div className='container mb-5'>
       <h1 className="heading">Carousel 3D Swiper</h1>
       <Swiper
         effect={'coverflow'}
@@ -35,7 +35,7 @@ export const CarrouselImagen = () => {
           rotate: 0,
           stretch: 0,
           depth: 100,
-          modifier: 2.5,
+          modifier: 3,
         }}
         pagination={{ el: '.swiper-pagination', clickable: true }}
         navigation={{

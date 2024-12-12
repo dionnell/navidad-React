@@ -83,15 +83,15 @@ export const Formulario = () => {
               <label  className="block mb-2 text-gray-900 text-wrap">
                 Nombre y Correo de la persona que desea que le de el regalo
               </label>
-              <div class="bg-white my-4 rounded-lg w-[295px]">
-                <div class="relative bg-inherit">
+              <div className="bg-white my-4 rounded-lg w-[295px]">
+                <div className="relative bg-inherit">
                   <input type="text" id="username" name="Nombre2" className="peer bg-transparent h-[25px] w-[295px] rounded-lg text-gray-700 placeholder-transparent ring-2 px-2 ring-gray-500 focus:ring-indigo-500 focus:outline-none focus:border-indigo-500" placeholder="Nombre"/>
                   <label for="username" className="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-inherit mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-sky-600 peer-focus:text-sm transition-all">Nombre</label>
                 </div>
               </div>
 
-              <div class="bg-white my-4 rounded-lg w-[295px]">
-                <div class="relative bg-inherit ">
+              <div className="bg-white my-4 rounded-lg w-[295px]">
+                <div className="relative bg-inherit ">
                   <input type="correo" id="correo" name="correo" className="peer bg-transparent h-[25px] w-[295px] rounded-lg text-gray-700 placeholder-transparent ring-2 px-2 ring-gray-500 focus:ring-indigo-500 focus:outline-none focus:border-indigo-500" placeholder="correo"/>
                   <label for="correo" className="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-inherit mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-sky-600 peer-focus:text-sm transition-all">correo</label>
                 </div>
