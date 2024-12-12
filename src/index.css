@@ -299,25 +299,21 @@ body {
 }
 @media (max-width: 768px) {
   .Modal {
-    right: 70%;
     left: 30%;
   }
 }
 @media (max-width: 600px) {
   .Modal {
-    right: 70%;
     left: 20%;
   }
 }
 @media (max-width: 500px) {
   .Modal {
-    right: 70%;
-    left: 13%;
+    left: 8%;
   }
 }
 @media (max-width: 400px) {
   .Modal {
-    right: 70%;
     left: 5%;
   }
 }
@@ -574,7 +570,7 @@ body {
 }
 
 .play-list .track .track-img {
-  width: 80px;
+  width: 70px;
   height: 60px;
   border-radius: calc(20px - 10px);
 }
