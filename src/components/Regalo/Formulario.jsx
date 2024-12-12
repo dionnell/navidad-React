@@ -46,7 +46,7 @@ export const Formulario = () => {
 
   return (
     <>
-      <div className="formulario p-5 rounded-3xl"> 
+      <div className="formulario p-5 rounded-3xl font-medium"> 
           <form
             ref={form}
             onSubmit={sendEmail} 
@@ -54,13 +54,13 @@ export const Formulario = () => {
           >
             <div className="grid gap-x-10 gap-y-4 grid-cols-1 justify-items-center mb-5">
               <div className=" me-auto ms-auto ">
-                <h1 className="text-3xl font-bold text-gray-700">Formulario</h1>
+                <h1 className="text-3xl font-bold text-gray-700 max-md:text-4xl">Formulario</h1>
               </div>
             </div>
-            <p className="text-base mt-3 text-gray-700">*Rellene los datos para pedir Regalo</p>
+            <p className="text-base mt-3 text-gray-700 max-md:text-lg">*Rellene los datos para pedir Regalo</p>
 
             <div className="mb-5 text-gray-700 grid">
-              <label className="mb-2 text-gray-900 ">Tu nombre</label>
+              <label className="mb-2 text-gray-900 max-md:text-2xl">Tu nombre</label>
               <input 
                 type="text" 
                 name="name"
@@ -70,7 +70,7 @@ export const Formulario = () => {
             </div>
 
             <div className="mb-5 text-gray-700 grid">
-              <label className="block mb-2  text-gray-900 ">Regalo Deseado</label>
+              <label className="block mb-2  text-gray-900 max-md:text-2xl">Regalo Deseado</label>
               <textarea 
                 type="text" 
                 name="regalo"
@@ -80,20 +80,20 @@ export const Formulario = () => {
             </div>
 
             <div className="mb-5 text-gray-700 grid ">
-              <label  className="block mb-2 text-gray-900 text-wrap">
+              <label  className="block mb-2 text-gray-900 text-wrap max-md:text-2xl">
                 Nombre y Correo de la persona que desea que le de el regalo
               </label>
               <div className="bg-white my-4 rounded-lg w-[295px]">
                 <div className="relative bg-inherit">
                   <input type="text" id="username" name="Nombre2" className="peer bg-transparent h-[25px] w-[295px] rounded-lg text-gray-700 placeholder-transparent ring-2 px-2 ring-gray-500 focus:ring-indigo-500 focus:outline-none focus:border-indigo-500" placeholder="Nombre"/>
-                  <label for="username" className="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-inherit mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-sky-600 peer-focus:text-sm transition-all">Nombre</label>
+                  <label for="username" className="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-inherit mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-sky-600 peer-focus:text-sm transition-all max-md:text-base">Nombre</label>
                 </div>
               </div>
 
               <div className="bg-white my-4 rounded-lg w-[295px]">
                 <div className="relative bg-inherit ">
-                  <input type="correo" id="correo" name="correo" className="peer bg-transparent h-[25px] w-[295px] rounded-lg text-gray-700 placeholder-transparent ring-2 px-2 ring-gray-500 focus:ring-indigo-500 focus:outline-none focus:border-indigo-500" placeholder="correo"/>
-                  <label for="correo" className="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-inherit mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-sky-600 peer-focus:text-sm transition-all">correo</label>
+                  <input type="correo" id="correo" name="correo" className="peer bg-transparent h-[25px] w-[295px] rounded-lg text-gray-700 placeholder-transparent ring-2 px-2 ring-gray-500 focus:ring-indigo-500 focus:outline-none focus:border-indigo-500 " placeholder="correo"/>
+                  <label for="correo" className="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-inherit mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-sky-600 peer-focus:text-sm transition-all max-md:text-base">correo</label>
                 </div>
               </div>
 
