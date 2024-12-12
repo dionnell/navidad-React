@@ -223,7 +223,7 @@ export const PlaylistMusic = () => {
                 Your browser does not support the audio element.
             </audio>
             <div className="relative m-0 w-[200px] h-[200px] rounded-3xl  shadow-[0px_10px_40px_0px_rgba(39,70,132,0.7)] overflow-hidden hover:animate-[convertirEnCirculo_0.35s_forwards]">
-                <img className='w-auto h-full object-cover' src={currentSong.img} alt="Song cover" />
+                <img className='w-full h-full object-cover' src={currentSong.img} alt="Song cover" />
             </div>
             <span className="mt-7 text-4xl font-medium">{currentSong.name}</span>
             <span className="text-[#03396c]">{currentSong.author}</span>
