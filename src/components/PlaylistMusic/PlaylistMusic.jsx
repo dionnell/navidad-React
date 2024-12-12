@@ -222,7 +222,7 @@ export const PlaylistMusic = () => {
                 <source src={currentSong.audio} type="audio/mpeg"/>
                 Your browser does not support the audio element.
             </audio>
-            <div className="relative m-0 w-[200px] h-[200px] rounded-3xl  shadow-[0px_10px_40px_0px_rgba(39,70,132,0.7)] overflow-hidden hover:animate-[convertirEnCirculo_0.35s_forwards]">
+            <div className="relative m-0 w-[200px] h-[200px] rounded-3xl  shadow-[0px_10px_40px_0px_rgba(39,70,132,0.7)] overflow-hidden hover:animate-[convertirEnCirculo_0.35s_forwards] ">
                 <img className='w-full h-full object-cover' src={currentSong.img} alt="Song cover" />
             </div>
             <span className="mt-7 text-4xl font-medium">{currentSong.name}</span>
@@ -257,9 +257,9 @@ export const PlaylistMusic = () => {
                     }`}
                 >
                     <img className="track-img object-cover hover:animate-[scaleImg_0.35s_forwards] " src={music.img} alt="Track cover" />
-                    <div className="track-discr max-md:w-[150px]">
-                        <span className="track-name w-[195px] max-md:w-[150px] truncate hover:text-clip">{music.name}</span>
-                        <span className="track-author">{music.author}</span>
+                    <div className="track-discr max-md:w-[150px] ">
+                        <span className="track-name w-[195px] pr-3 max-md:w-[150px] truncate hover:text-clip">{music.name}</span>
+                        <span className="track-author truncate ">{music.author}</span>
                     </div>
                     <span className="track-duration">
                         {index === key ? currentTime : music.duration}
