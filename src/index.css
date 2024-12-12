@@ -112,7 +112,6 @@ body {
 @media (max-width: 572px) {
   .swiper_container {
     height: 30rem;
-    width: 50rem;
   }
   .swiper-slide {
     width: 25rem !important;
@@ -663,7 +662,7 @@ body {
 }
 @media(max-width: 600px){
   .cloud-text{
-    font-size: 100px;
+    font-size: 80px;
   }
   .containerTitle{
     padding-bottom: 25px;
