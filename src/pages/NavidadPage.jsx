@@ -19,8 +19,8 @@ const onTailwind = () =>{
     <>
       <Titulo/>
       <div className="gradient">
-        <div className="grid gap-x-10  grid-cols-2 justify-items-center">
-        <div className="px-11 py-11 ms-auto max-sm:px-0">
+        <div className="grid gap-x-8  grid-cols-2 justify-items-center">
+        <div className=" py-11 ms-auto ">
           <button 
             className="button border-2"
             onClick={onSwiper}
@@ -31,7 +31,7 @@ const onTailwind = () =>{
             </div>
           </button>
         </div>
-        <div className="px-11 py-11 me-auto max-sm:px-0">
+        <div className=" py-11 me-auto">
           <button 
             className="button border-2"
             onClick={onTailwind}
