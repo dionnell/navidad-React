@@ -300,6 +300,7 @@ body {
 @media (max-width: 768px) {
   .Modal {
     left: 30%;
+    top: 80px;
   }
 }
 @media (max-width: 600px) {
