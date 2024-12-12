@@ -314,14 +314,10 @@ body {
 }
 @media (max-width: 400px) {
   .Modal {
-    left: 5%;
-  }
-}
-@media (max-width: 350px) {
-  .Modal {
     left: 1%;
   }
 }
+
 .Overlay {
   position: fixed;
   top: 0;
@@ -578,12 +574,16 @@ body {
   height: 60px;
   border-radius: calc(20px - 10px);
 }
-
+@media (max-width: 640px) {
+  .track-img {
+      width: 60px !important;
+  }
+}
 .play-list .track .track-discr {
   margin-left: 15px;
   display: flex;
   flex-direction: column;
-  min-width: 190px;
+  min-width: 140px;
 }
 
 .play-list .track .track-discr .track-name {
