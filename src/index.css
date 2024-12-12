@@ -392,7 +392,7 @@ body {
 .formulario {
   background-image: url('/papel-regalo.jpg');
   backdrop-filter: blur(3px);
-  font-family: 'Coiny', cursive;
+  font-family: cursive;
 }
 
 .GlassmorphismForm {
@@ -647,7 +647,7 @@ body {
     -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 8%, rgba(0, 0, 0, 1) 55%);
 }
 .cloud-text {
-	font-family: 'Coiny', cursive;
+	font-family: cursive;
 	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;	
 	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/clouds.jpg);
