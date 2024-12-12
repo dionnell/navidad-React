@@ -215,8 +215,8 @@ export const PlaylistMusic = () => {
   
 
   return (
-    <div className="grid grid-cols-2 justify-center items-center  p-1 mb-10 rounded-2xl overflow-hidden text-[#b3cde0] font-light bg-[#011f4b] shadow-[0px_0px_70px_0px_#274684] h-[440px] max-md:grid-cols-1 max-md:h-[700px]">
-        <div  className="flex flex-col items-center w-[360px] py-5 mx-auto rounded-2xl text-[#011f4b] bg-[#b3cde0] max-md:h-[350px] max-md:w-[310px] max-sm:w-[280px]">
+    <div className="grid grid-cols-2 justify-center items-center  p-1 mb-10 rounded-2xl overflow-hidden text-[#b3cde0] font-light bg-[#011f4b] shadow-[0px_0px_70px_0px_#274684] h-[440px] max-md:grid-cols-1 max-md:h-[700px] max-md:w-[310px] max-sm:w-[300px]">
+        <div  className="flex flex-col items-center w-[360px] py-5 mx-auto rounded-2xl text-[#011f4b] bg-[#b3cde0] max-md:h-[350px] max-sm:w-[280px]">
             <audio  className='hidden' ref={playerRef}>
                 <source src={currentSong.audio} type="audio/ogg" />
                 <source src={currentSong.audio} type="audio/mpeg"/>
@@ -247,18 +247,18 @@ export const PlaylistMusic = () => {
                 </button>
             </div>
         </div>
-        <div className="play-list max-md:h-[300px] max-md:py-0">
+        <div className="play-list max-md:h-[300px] max-md:py-0 ">
             {musicList.map((music, key) => (
                 <div
                     key={key}
                     onClick={() => clickAudio(key)}
-                    className={`track ${index === key && !pause ? 'current-audio' : ''} ${
+                    className={`track  ${index === key && !pause ? 'current-audio' : ''} ${
                         index === key && pause ? 'play-now' : ''
                     }`}
                 >
-                    <img className="track-img object-cover hover:animate-[scaleImg_0.35s_forwards]" src={music.img} alt="Track cover" />
-                    <div className="track-discr">
-                        <span className="track-name w-[195px] truncate hover:text-clip">{music.name}</span>
+                    <img className="track-img object-cover hover:animate-[scaleImg_0.35s_forwards] " src={music.img} alt="Track cover" />
+                    <div className="track-discr max-md:w-[150px]">
+                        <span className="track-name w-[195px] max-md:w-[150px] truncate hover:text-clip">{music.name}</span>
                         <span className="track-author">{music.author}</span>
                     </div>
                     <span className="track-duration">
