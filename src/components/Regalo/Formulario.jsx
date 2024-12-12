@@ -46,7 +46,7 @@ export const Formulario = () => {
 
   return (
     <>
-      <div className="formulario p-5 rounded-3xl">
+      <div className="formulario p-5 rounded-3xl"> 
           <form
             ref={form}
             onSubmit={sendEmail} 
