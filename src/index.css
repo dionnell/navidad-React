@@ -391,6 +391,7 @@ body {
 .formulario {
   background-image: url('/papel-regalo.jpg');
   backdrop-filter: blur(3px);
+  font-family: 'Coiny', cursive;
 }
 
 .GlassmorphismForm {
@@ -570,7 +571,7 @@ body {
 }
 
 .play-list .track .track-img {
-  width: 70px;
+  width: 60px;
   height: 60px;
   border-radius: calc(20px - 10px);
 }
