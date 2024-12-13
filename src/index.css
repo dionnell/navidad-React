@@ -63,9 +63,14 @@ body {
   background: var(--bg);
 }
 
+.GlassmorphismCarrousel {
+  background: rgb(255 255 255 / 0%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
 .container {
   max-width: 200rem;
-  padding: 3rem 1rem;
+  padding: 1rem 1rem;
   margin: 0 auto;
 }
 
@@ -131,7 +136,7 @@ body {
 
 .slider-controler {
   position: relative;
-  bottom: 2rem;
+  bottom: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -198,10 +203,11 @@ body {
 
 .swiper-pagination .swiper-pagination-bullet {
   filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+  opacity: 0.7 !important;
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
-  background: var(--primary);
+  background: #2810ff;
 }
 
 .GlassmorphismDots {
@@ -215,6 +221,7 @@ body {
 /* buton */
 .button {
   display: inline-flex;
+  background-color: #fff;
   align-items: center;
   justify-content: center;
   padding: 15px 30px;
@@ -227,7 +234,8 @@ body {
   cursor: pointer;
   color: rgb(37, 37, 37);
   z-index: 0;
-  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 15px 0px rgba(39, 70, 132, 0.7);
+
 }
 
 .button:hover {
@@ -260,8 +268,8 @@ body {
     rgba(0, 212, 255, 1) 100%
   );
   border-radius: 40rem;
-  width: 10rem;
-  height: 10rem;
+  width: 18rem;
+  height: 11rem;
   transition: 0.4s;
   filter: blur(20px);
   animation: effect infinite 3s linear;
@@ -399,8 +407,8 @@ body {
   background: rgba(255, 255, 255, 0.53);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6.6px);
-  -webkit-backdrop-filter: blur(6.6px);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 
 /* PlayList */
@@ -685,5 +693,6 @@ body {
 /* Fin PlayList */
 
 .gradient{
-  background-image: linear-gradient(180deg, #f5f7fa 0%, #ccd3dd 10%,#c3cfe2 100%);
+  background-image: url('/nieve2.png'), linear-gradient(180deg, #f5f7fa 0%, #ccd3dd 10%,#c3cfe2 100%);
+  background-size: cover;
 }

@@ -19,7 +19,7 @@ export const CarrouselImagen = () => {
 
 
   return (
-    <div className='container mb-5'>
+    <div className='container GlassmorphismCarrousel mb-5'>
       <h1 className="heading">Carousel 3D Swiper</h1>
       <Swiper
         effect={'coverflow'}

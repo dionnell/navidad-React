@@ -50,7 +50,7 @@ export const CarouselTailwind = ({interval = 3000}) => {
     }, [nextSlide]);
 
   return (
-    <>
+    <div className='GlassmorphismCarrousel'>
         <h1 className='text-center text-3xl font-semibold font-sans py-3'> Carousel Tailwind </h1>
         <div 
             className='max-w-[1800px] h-[480px] w-full m-auto py-8 px-4 relative group'
@@ -94,6 +94,6 @@ export const CarouselTailwind = ({interval = 3000}) => {
 
         </div>
         
-    </>
+    </div>
   )
 }
