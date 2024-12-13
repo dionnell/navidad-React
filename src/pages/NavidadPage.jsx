@@ -31,7 +31,7 @@ export const NavidadPage = () => {
       <Titulo/>
       <div className="gradient">
         <div className="grid gap-x-8  grid-cols-2 justify-items-center">
-        <div className=" py-11 ms-auto ">
+        <div className=" py-11 ms-auto mr-2">
           <button 
             className="button border-2"
             onClick={onSwiper}
@@ -42,7 +42,7 @@ export const NavidadPage = () => {
             </div>
           </button>
         </div>
-        <div className=" py-11 me-auto">
+        <div className=" py-11 me-auto ml-2">
           <button 
             className="button border-2"
             onClick={onTailwind}
