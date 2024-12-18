@@ -33,6 +33,7 @@ export const Formulario = () => {
         () => {
           Swal.fire({
             title: "Correo Enviado con la peticion de regalo",
+            text: 'El correo puede llegar a la carpeta de Spam!!',
             width: 500,
             padding: "3em",
             color: "#716add",
@@ -103,8 +104,8 @@ export const Formulario = () => {
                 <div className="grid grid-cols-[130px_minmax(00px,_1fr)_100px]">
                   <label className="block mb-2 w-[130px] text-gray-900 max-md:text-3xl">Regalo Deseado</label>
                     {
-                      (listening) ? <button className="mr-auto w-[23px] h-[23px] " onClick={SpeechRecognition.stopListening}> <FaMicrophoneSlash className="w-[20px] h-[20px] rounded-full border-3  hover:text-red-700 hover:border-red-700"/> </button>
-                      : <button className="mr-auto w-[23px] h-[23px] " onClick={onStartListening}> <FaMicrophoneAlt className="w-[20px] h-[20px] rounded-full border-3  hover:text-red-700 hover:border-red-700"/> </button>
+                      (listening) ? <div className="mr-auto w-[23px] h-[23px] " onClick={SpeechRecognition.stopListening}> <FaMicrophoneSlash className="w-[20px] h-[20px] rounded-full border-3  hover:text-red-700 hover:border-red-700"/> </div>
+                      : <div className="mr-auto w-[23px] h-[23px] " onClick={onStartListening}> <FaMicrophoneAlt className="w-[20px] h-[20px] rounded-full border-3  hover:text-red-700 hover:border-red-700"/> </div>
                     }
                 </div>
                 <textarea 
@@ -112,7 +113,7 @@ export const Formulario = () => {
                   name="regalo"
                   className="bg-white h-40 w-auto rounded-lg text-gray-700 placeholder-transparent ring-2 px-2 ring-gray-500 focus:ring-indigo-500 focus:outline-none focus:border-indigo-500" 
                   placeholder="Quiero Un helicoptero de regalo" 
-                  value={regalo || transcript} 
+                  value={ regalo || transcript } 
                   onChange={onInputChange}
                   required />
               </>
@@ -126,14 +127,14 @@ export const Formulario = () => {
               </label>
               <div className="bg-white my-4 rounded-lg w-[295px]">
                 <div className="relative bg-inherit">
-                  <input type="text" id="username" name="Nombre2" className="peer bg-transparent h-[25px] w-[295px] rounded-lg text-gray-700 placeholder-transparent ring-2 px-2 ring-gray-500 focus:ring-indigo-500 focus:outline-none focus:border-indigo-500" placeholder="Nombre" onChange={onInputChange}/>
+                  <input type="text" id="username" name="Nombre2" className="peer bg-transparent h-[25px] w-[295px] rounded-lg text-gray-700 placeholder-transparent ring-2 px-2 ring-gray-500 focus:ring-indigo-500 focus:outline-none focus:border-indigo-500" placeholder="Nombre" onChange={onInputChange} required/>
                   <label for="username" className="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-inherit mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-sky-600 peer-focus:text-sm transition-all max-md:text-3xl">Nombre</label>
                 </div>
               </div>
 
               <div className="bg-white my-4 rounded-lg w-[295px]">
                 <div className="relative bg-inherit ">
-                  <input type="correo" id="correo" name="correo" className="peer bg-transparent h-[25px] w-[295px] rounded-lg text-gray-700 placeholder-transparent ring-2 px-2 ring-gray-500 focus:ring-indigo-500 focus:outline-none focus:border-indigo-500 " placeholder="correo" onChange={onInputChange}/>
+                  <input type="correo" id="correo" name="correo" className="peer bg-transparent h-[25px] w-[295px] rounded-lg text-gray-700 placeholder-transparent ring-2 px-2 ring-gray-500 focus:ring-indigo-500 focus:outline-none focus:border-indigo-500 " placeholder="correo" onChange={onInputChange} required/>
                   <label for="correo" className="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-inherit mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-sky-600 peer-focus:text-sm transition-all max-md:text-3xl">correo</label>
                 </div>
               </div>
